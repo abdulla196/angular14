@@ -15,10 +15,11 @@ export class BlogDetailsComponent implements OnInit {
     "content":''
   } ;
   constructor(private DetailsService:DetailsService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute,private router: Router) { }
    
   ngOnInit(): void {
       this.getBlog(this.route.snapshot.params["id"])
+    console.log(this.router.url)
   }
   getBlog(id: string): void {
     this.DetailsService.getBlog().subscribe(res => {
