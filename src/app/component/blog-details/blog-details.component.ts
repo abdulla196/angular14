@@ -19,8 +19,6 @@ export class BlogDetailsComponent implements OnInit {
    
   ngOnInit(): void {
       this.getBlog(this.route.snapshot.params["id"])
-    
-    
   }
   getBlog(id: string): void {
     this.DetailsService.getBlog().subscribe(res => {
