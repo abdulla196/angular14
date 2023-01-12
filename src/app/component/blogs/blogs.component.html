@@ -1,0 +1,41 @@
+
+        <div id="about">
+            <div class="top-content">
+                <app-header></app-header>
+                <div class="head-content">
+                    <div class="description">
+                        <h1><span>{{ 'blog_1'|translate }}</span>{{'blog_2'|translate }}</h1>
+                        <p [innerHTML]=" 'blog_3' |translate">
+
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img loading="lazy" src="../../../assets/images/blog.svg"  alt="cashi" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="container info-contact" dir="rtl">
+                <div class="row" v-if="allBlogs">
+                    <div 
+                    *ngFor="
+                      let item of users" class="col-md-4 col-sm-6 col-12 my-2">
+                        <div class="card mx-auto">
+                            <img class="white--text align-end"
+                                [src]="item.image_path"/>
+                            <div class="card-body text--primary" dir="rtl">
+                                <h2  class="title" [innerHTML]="item.title"></h2> 
+                                <div class="description-blog" [innerHTML]="item.meta_description"></div> 
+                            </div>
+                                <div class="card-footer">
+                                    <a color="orange" routerLink="/blogs/{{item.uri}}" >
+                                        المزيد 
+                                    </a>
+                                    <span>{{item.created_at}}</span>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <app-footer></app-footer>
+        </div>

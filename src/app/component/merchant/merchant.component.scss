@@ -1,0 +1,633 @@
+// colors
+$blue: #233963;
+$white: #FFF;
+$black: #000;
+$dark: #4A4A4A;
+$light: #A4A4A4;
+$orange: #ef9536;
+
+//font size
+$head_title_size_web_en:50px;
+$head_title_size_mobile_en:32px;
+$head_title_size_web_ar:45px;
+$head_title_size_mobile_ar:32px;
+$head_dec_size_web_en:20px;
+$head_dec_size_mobile_en:16px;
+$head_dec_size_web_ar:18px;
+$head_dec_size_mobile_ar:16px;
+
+$all_title_size_web_en:40px;
+$all_title_size_mobile_en:30px;
+$all_title_size_web_ar:36px;
+$all_title_size_mobile_ar:26px;
+$all_dec_size_web_en:20px;
+$all_dec_size_mobile_en:16px;
+$all_dec_size_web_ar:18px;
+$all_dec_size_mobile_ar:16px;
+
+$box_title_size_web_en:20px;
+$box_title_size_mobile_en:20px;
+$box_title_size_web_ar:20px;
+$box_title_size_mobile_ar:20px;
+$box_dec_size_web_en:16px;
+$box_dec_size_mobile_en:16px;
+$box_dec_size_web_ar:16px;
+$box_dec_size_mobile_ar:16px;
+#merchant {
+    .top-content {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+        margin-bottom: 3rem;
+
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+            min-height: auto;
+            background-position: center center;
+        }
+
+        .head-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3rem 0;
+
+            @media only screen and (max-width: 768px) {
+                padding: 1rem;
+                display: block;
+            }
+
+            .description {
+                width: 35%;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-family: 'Noto Kufi Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $head_title_size_web_en;
+                    line-height: 56px;
+                    color: #fff;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: $head_title_size_mobile_en;
+                        line-height: 35px;
+                    }
+                }
+
+                p {
+                    font-family: 'Noto Kufi Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: $head_dec_size_web_en;
+                    line-height: 30px;
+                    color: #ffffff;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: $head_dec_size_mobile_en;
+                        line-height: 24px;
+                    }
+
+                    span {
+                        font-size: 20px;
+                        margin-top: 1rem;
+                        display: block;
+                        color: #feca00;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .image {
+                width: 27%;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    display: none;
+                }
+
+                img {
+                    width: 100%
+                }
+            }
+        }
+    }
+
+    .pos-empowerd {
+        @media only screen and (max-width: 768px) {
+            margin-top: 0;
+        }
+
+        .pos-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3rem 0;
+
+            @media only screen and (max-width: 768px) {
+                display: block;
+                padding: 0;
+            }
+
+            .image {
+                width: 23%;
+                @media only screen and (max-width: 768px) {
+                    display: none;
+                }
+                img {
+                    width: 100%
+                }
+            }
+
+            .description {
+                width: 35%;
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    padding: 1rem;
+                }
+                h2 {
+                    font-family: 'Noto Kufi Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: $all_title_size_web_en;
+                    line-height: 47px;
+                    color: #0f1c49;
+                    margin-bottom: 1rem;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: $all_title_size_mobile_en;
+                        line-height: 33px;
+                    }
+                }
+
+                p {
+                    font-family: 'Noto Kufi Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: $all_dec_size_web_en;
+                    line-height: 25px;
+                    color: #130f49;
+                    opacity: 0.8;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: $all_dec_size_mobile_en;
+                        line-height: 24px;
+                    }
+
+                }
+            }
+        }
+
+        .do-it {
+            padding: 3rem 0;
+
+            @media only screen and (max-width: 768px) {
+                padding: 1rem;
+            }
+
+            h2 {
+                font-family: 'Noto Kufi Arabic', sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 55px;
+                line-height: 56px;
+                text-align: center;
+                color: rgba(19, 15, 73, 0.5);
+                margin-bottom: 2rem;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 34px;
+                    margin-bottom: 1rem;
+                }
+            }
+
+            .cards {
+                display: flex;
+                justify-content: center;
+                justify-content: space-evenly;
+                width: 83%;
+                margin: auto;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    width: 95%;
+                    margin: auto;
+                }
+
+                .card {
+                    position: relative;
+                    background: #fff;
+                    border: 1px solid #cde4f9;
+                    box-sizing: border-box;
+                    width: 24%;
+                    border-radius: 24px;
+                    padding: 1rem;
+                    background: #ffffff;
+                    border: 1px solid #c4c4c4;
+                    border-radius: 24px;
+
+                    @media only screen and (max-width: 768px) {
+                        display: block;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+
+                    .intro {
+                        h3 {
+                            font-family: 'Noto Kufi Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: $box_dec_size_web_en;
+                            line-height: 28px;
+                            color: #4f2d82;
+                            margin-bottom: 0.5rem;
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: $box_dec_size_mobile_en;
+                            }
+                        }
+
+                        p {
+                            font-family: 'Noto Kufi Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: $box_dec_size_web_en;
+                            line-height: 24px;
+                            letter-spacing: 0.0052em;
+                            color: #130f49;
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: $box_dec_size_mobile_en;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .tracking-transaction {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            min-height: 80vh;
+            margin: -8rem 0 3rem;
+            padding: 4rem 0 7rem;
+
+            @media only screen and (max-width: 768px) {
+                margin: 0 0 1rem;
+                padding: 1rem 0 1rem;
+                min-height: auto;
+            }
+
+            .transaction-content {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 3rem 0;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    padding: 3rem 1rem;
+                }
+
+                .description {
+                    width: 35%;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+
+                    h2 {
+                        font-family: 'Noto Kufi Arabic', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: $all_title_size_web_en;
+                        line-height: 58px;
+                        color: #0f1c49;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: $all_title_size_mobile_en;
+                            line-height: 33px;
+                        }
+                    }
+
+                    p {
+                        font-family: 'Noto Kufi Arabic', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: $all_dec_size_web_en;
+                        line-height: 25px;
+                        letter-spacing: -1px;
+                        color: #130f49;
+                        opacity: 0.8;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: $all_dec_size_mobile_en;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .image {
+                    width: 17%;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 70%;
+                        margin: auto;
+                    }
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .steps {
+                display: flex;
+                justify-content: space-evenly;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                }
+
+                .one-step {
+                    width: 20%;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 85%;
+                        margin: auto;
+                        margin-bottom: 2rem;
+                    }
+
+                    .head {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1.5rem;
+
+                        @media only screen and (max-width: 768px) {
+                            margin-bottom: 0.5rem;
+                        }
+
+                        img {
+                            width: 60px;
+                            height: 60px;
+                        }
+
+                        h4 {
+                            font-family: 'Noto Kufi Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: $box_dec_size_web_en;
+                            line-height: 34px;
+                            letter-spacing: -0.01em;
+                            color: #130f49;
+                            margin: 0 1rem;
+                            
+                            @media only screen and (max-width: 768px) {
+                                font-size: $box_dec_size_mobile_en;
+                            }
+                        }
+                    }
+
+                    .content {
+                        p {
+                            font-family: 'Noto Kufi Arabic', sans-serif;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: $box_dec_size_web_en;
+                            line-height: 24px;
+                            color: #130F49;
+                            opacity: 0.4;
+
+                            @media only screen and (max-width: 768px) {
+                                font-size: $box_dec_size_mobile_en;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .point-sale {
+           
+
+            .point-sale-content {
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 0rem 0 2rem;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    padding: 1rem;
+                }
+
+                .description {
+                    width: 35%;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+                    h2 {
+                        font-family: 'Noto Kufi Arabic', sans-serif;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: $all_title_size_web_en;
+                        line-height: 55px;
+                        color: #130F49;
+        
+                        @media only screen and (max-width: 768px) {
+                            font-size: $all_title_size_mobile_en;
+                            line-height: 33px;
+                            width: 100%;
+                            padding: 1rem;
+                        }
+        
+                    }
+                    p {
+                        font-family: 'Noto Kufi Arabic', sans-serif;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: $all_dec_size_web_en;
+                        line-height: 38px;
+                        letter-spacing: -1px;
+                        color: #130F49;
+                        opacity: 0.4;
+                        margin-bottom: 1.5rem;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: $all_dec_size_mobile_en;
+                            line-height: 24px;
+                        }
+                    }
+                }
+
+                .image {
+                    width: 23%;
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .hidden{
+                    display: none;
+                }
+            }
+        }
+
+        .map {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 100% 100%;
+            padding: 11rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            @media only screen and (max-width: 768px) {
+                padding: 8rem 0;
+            }
+
+            h3 {
+                font-family: 'Noto Kufi Arabic', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 52px;
+                line-height: 64px;
+                text-align: center;
+                letter-spacing: -2.32px;
+                width: 56%;
+                color: #FFFFFF;
+                margin-bottom: 1rem;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    font-size: 31px;
+                }
+            }
+
+            a {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 28px 0;
+                gap: 10px;
+                padding: 0 2rem;
+                height: 79px;
+                background: #FFFFFF;
+                border-radius: 20px;
+                font-family: 'Noto Kufi Arabic', sans-serif;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 130%;
+                text-align: center;
+                color: #604ED5;
+                flex: none;
+                order: 0;
+                flex-grow: 0;
+                border: none;
+            }
+        }
+    }
+
+}
+
+[lang="ar"] {
+    #merchant .top-content .head-content .description h1 {
+        font-size: $head_title_size_web_ar;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 768px) {
+            font-size: $head_title_size_mobile_ar;
+            line-height: 30px;
+        }
+    }
+    #merchant .top-content .head-content .description p {
+        font-size: $head_dec_size_web_ar;
+        line-height: 30px;
+        @media only screen and (max-width: 768px) {
+            font-size: $head_dec_size_mobile_ar;
+            line-height: 26px;
+        }
+    }
+    
+    #merchant .pos-empowerd .pos-content .description h2 {
+        font-size: $all_title_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $all_title_size_mobile_ar;
+        }
+    }
+    #merchant .pos-empowerd .pos-content .description p {
+        font-size: $all_dec_size_web_ar;
+        line-height: 30px;
+        @media only screen and (max-width: 768px) {
+            font-size: $all_dec_size_mobile_ar;
+            line-height: 26px;
+        }
+    }
+    #merchant .pos-empowerd .do-it .cards .card .intro h3{
+        font-size: $box_title_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $box_title_size_mobile_ar;
+        }
+    }
+    #merchant .pos-empowerd .do-it .cards .card .intro p{
+        font-size: $box_dec_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $box_dec_size_mobile_ar;
+        }
+    }
+    #merchant .pos-empowerd .tracking-transaction .transaction-content .description h2 {
+        font-size: $all_title_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $all_title_size_mobile_ar;
+        }
+    }
+    #merchant .pos-empowerd .tracking-transaction .transaction-content .description p {
+        font-size: $all_dec_size_web_ar;
+        line-height: 30px;
+        @media only screen and (max-width: 768px) {
+            font-size: $all_dec_size_mobile_ar;
+            line-height: 26px;
+        }
+    }
+
+    #merchant .pos-empowerd .tracking-transaction .steps .one-step .head h3{
+        font-size: $box_title_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $box_title_size_mobile_ar;
+        }
+    }
+    #merchant .pos-empowerd .tracking-transaction .steps .one-step .content p{
+        font-size: $box_dec_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $box_dec_size_mobile_ar;
+        }
+    }
+
+    #merchant .pos-empowerd .point-sale .point-sale-content .descriptio h2 {
+        font-size: $all_title_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $all_title_size_mobile_ar;
+        }
+    }
+    #merchant .pos-empowerd .point-sale .point-sale-content .description p {
+        font-size: $all_dec_size_web_ar;
+        line-height: 30px;
+        @media only screen and (max-width: 768px) {
+            font-size: $all_dec_size_mobile_ar;
+            line-height: 26px;
+        }
+    }
+}

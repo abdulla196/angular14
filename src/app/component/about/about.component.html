@@ -1,0 +1,45 @@
+<div id="about"  dir="{{'direction' | translate}}" lang="{{'language'|translate}}">
+    <div class="top-content">
+        <app-header></app-header>
+        <div class="head-content">
+            <div class="description">
+                <h1>{{ 'about_1' | translate }}</h1>
+                <p [innerHTML]="'about_2' | translate">
+                    
+                </p>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="../../../assets/images/consumer/banner.png" alt="Cashi" />
+            </div>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container">
+            <div class="row" dense style="justify-content:space-around;margin:1rem 0;"> 
+                <div class="col-lg-3 cols-sm-4 col-12 text-center about_card">
+                    <img loading="lazy" src="../../../assets/images/about/alsoug.png" alt="alsoug" width="150" height="150"/>
+                        <h5 class=" mt-3 mb-2">
+                            {{ 'about_3' | translate }}
+                        </h5>
+                        <p [innerHTML]="'about_4' | translate">  </p>
+                </div>
+                <div class="col-lg-3 cols-sm-4 col-12 text-center about_card">
+                    <img loading="lazy" src="../../../assets/images/about/find_cashi.png" alt="find_cashi"  width="150" height="150"/>
+                        <h5 class=" mt-3 mb-2">
+                            {{ 'about_5' | translate }}
+                        </h5>
+                        <p [innerHTML]="'about_6' | translate"></p>
+                </div>
+                <div class="col-lg-3 cols-sm-4 col-12 text-center about_card">
+                    <img loading="lazy" src="../../../assets/images/about/target.png" alt="target" width="150" height="150"/>
+                        <h5 class=" mt-3 mb-2">
+                            {{ 'about_7' | translate }}
+                        </h5>
+                        <p [innerHTML]="'about_8' | translate"></p>
+                </div>
+            </div>
+        </div>
+        <app-footer></app-footer>
+    </section>
+</div>

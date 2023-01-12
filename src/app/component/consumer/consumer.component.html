@@ -1,0 +1,142 @@
+<div id="consumer">
+    <div class="top-content">
+        <app-header></app-header>
+        <div class="head-content">
+            <div class="description">
+                <h1 class="mb-3">
+                    {{ "consumer_1"| translate }}
+                </h1>
+                <p v-html="'consumer_2'| translate"> 
+                </p>
+            </div>
+            <div class="image">
+                <img loading="lazy" src="../../../assets/images/consumer/banner.png" alt="store" />
+            </div>
+        </div>
+    </div>
+
+    <section class="pos-empowerd">
+        <div class="pos-content">
+            <div class="image">
+                <img loading="lazy" src="../../../assets/images/consumer/recit.png" alt="store" />
+            </div>
+            <div class="description">
+                <h2>
+                    {{ "consumer_3"| translate }}
+                </h2>
+                <p>
+                    {{ "consumer_4"| translate }}
+                </p>
+            </div>
+        </div>
+        <div class="do-it">
+            <h2 class="text-center">
+                {{ "consumer_5"| translate }}
+            </h2>
+            <p class="text-center">{{ "consumer_6"| translate }}</p>
+            
+            <div class="cards container">
+                <div class="row mx-0" dense style="justify-content:space-around;margin:1rem 0;"> 
+                    <div class="col-md-3 cols-sm-6 col-12 text-center card my-3">
+                        <img loading="lazy" src="../../../assets/images/consumer/ask.png" alt="alsoug"/>
+                            <h5 class="">
+                                {{ 'consumer_7'| translate }}
+                            </h5>
+                    </div>
+                    <div class="col-md-3 cols-sm-6 col-12 text-center card my-3">
+                        <img loading="lazy" src="../../../assets/images/consumer/machine.png" alt="find_cashi" />
+                            <h5 class="">
+                                {{ 'consumer_8'| translate }}
+                            </h5>
+                    </div>
+                    <div class="col-md-3 cols-sm-6 col-12 text-center card my-3">
+                        <img loading="lazy" src="../../../assets/images/consumer/pay.png" alt="target"/>
+                            <h5 class="">
+                                {{ 'consumer_9'| translate }}
+                            </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tracking-transaction">
+            <div class="transaction-content">
+                <div class="description">
+                    <h2>
+                        {{ 'consumer_10'| translate }}
+                    </h2>
+                    <p>
+                        {{ 'consumer_11'| translate }}
+                    </p>
+                </div>
+                <div class="image">
+                    <img loading="lazy" src="../../../assets/images/consumer/cashi.png" alt="store" />
+                </div>
+            </div>
+            <div class="container">
+                <div class="row mx-0" dense style="justify-content:space-around">
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-12 one-step">
+                        <div class="head d-flex align-center">
+                            <img loading="lazy" src="../../../assets/images/consumer/trusted.svg"  alt="cashi" />
+                            <h4 style=" ">
+                                {{ 'consumer_12'| translate }}
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                {{ 'consumer_13'| translate }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-12 one-step">
+                        <div class="head d-flex align-center">
+                            <img loading="lazy" src="../../../assets/images/consumer/reliable.svg"  alt="cashi" />
+                            <h4>
+                                {{ 'consumer_14'| translate }}
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                {{ 'consumer_15'| translate }}
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-12 one-step">
+                        <div class="head d-flex align-center">
+                            <img loading="lazy" src="../../../assets/images/consumer/improving.svg"  alt="cashi" />
+                            <h4>
+                                {{ 'consumer_16'| translate }}
+                            </h4>
+                        </div>
+                        <div class="content">
+                            <p>
+                                {{ 'consumer_17'| translate }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="point-sale">
+            
+            <div class="point-sale-content">
+                <div class="description">
+                    <h2>
+                        {{ 'consumer_18'| translate }}
+                    </h2>
+                    <p>
+                        {{ 'consumer_19'| translate }}
+                    </p>
+                </div>
+                <div class="image">
+                    <img loading="lazy" src="../../../assets/images/consumer/market.png" alt="store" style="width: 100%" />
+                </div>
+            </div>
+        </div>
+        <div class="map" >
+            <h3>{{ 'consumer_20'| translate }}
+            </h3>
+            <a routerLink='/coming' class="menu-link"> {{ 'consumer_21'| translate }} </a>
+        </div>
+        <app-footer></app-footer>
+    </section>
+</div>

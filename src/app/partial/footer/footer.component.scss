@@ -1,0 +1,142 @@
+// colors
+$blue: #233963;
+$white: #FFF;
+$black: #000;
+$dark: #4A4A4A;
+$light: #A4A4A4;
+$orange: #ef9536;
+
+//font size
+$head_title_size_web_en:50px;
+$head_title_size_mobile_en:32px;
+$head_title_size_web_ar:45px;
+$head_title_size_mobile_ar:32px;
+$head_dec_size_web_en:20px;
+$head_dec_size_mobile_en:16px;
+$head_dec_size_web_ar:18px;
+$head_dec_size_mobile_ar:16px;
+
+$all_title_size_web_en:40px;
+$all_title_size_mobile_en:30px;
+$all_title_size_web_ar:36px;
+$all_title_size_mobile_ar:26px;
+$all_dec_size_web_en:20px;
+$all_dec_size_mobile_en:16px;
+$all_dec_size_web_ar:18px;
+$all_dec_size_mobile_ar:16px;
+
+$box_title_size_web_en:20px;
+$box_title_size_mobile_en:20px;
+$box_title_size_web_ar:20px;
+$box_title_size_mobile_ar:20px;
+$box_dec_size_web_en:16px;
+$box_dec_size_mobile_en:16px;
+$box_dec_size_web_ar:16px;
+$box_dec_size_mobile_ar:16px;
+
+.footer {
+	.copyright {
+		a {
+			margin: 0 1rem;
+			font-weight: 400;
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: -0.22px;
+			color: #fff;
+			flex: none;
+			order: 1;
+			flex-grow: 0;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		padding: 2rem;
+		text-align: center;
+
+		.list {
+			margin: 0 0 1rem !important;
+		}
+
+		.flex {
+			flex-direction: column;
+		}
+
+		.copyright {
+			a {
+				display: block;
+				margin: 1rem 0;
+			}
+		}
+
+		.menu {
+			.title {
+				text-align: start;
+			}
+		}
+	}
+}
+.new-footer{
+    border-top: 1px solid #ddd;
+}
+#footer-pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0rem 0;
+
+  @media only screen and (max-width: 768px) {
+    display: block;
+    text-align: center;
+  }
+
+  .logo {
+    @media only screen and (max-width: 768px) {
+      margin: 0 auto 1rem;
+    }
+  }
+
+  .menu {
+
+    @media only screen and (max-width: 768px) {
+      margin: 0 auto 1rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+
+      li {
+        display: inline-block;
+        margin: 0 0.5rem;
+
+        a {
+          font-family: 'Noto Kufi Arabic', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.22px;
+          color: #130F49;
+          flex: none;
+          order: 4;
+          flex-grow: 0;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.22px;
+    color: #130F49;
+    opacity: 0.4;
+  }
+}

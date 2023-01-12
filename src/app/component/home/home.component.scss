@@ -1,0 +1,222 @@
+// colors
+$blue: #233963;
+$white: #FFF;
+$black: #000;
+$dark: #4A4A4A;
+$light: #A4A4A4;
+$orange: #ef9536;
+
+//font size
+$head_title_size_web_en:50px;
+$head_title_size_mobile_en:32px;
+$head_title_size_web_ar:45px;
+$head_title_size_mobile_ar:32px;
+$head_dec_size_web_en:20px;
+$head_dec_size_mobile_en:16px;
+$head_dec_size_web_ar:18px;
+$head_dec_size_mobile_ar:16px;
+
+$all_title_size_web_en:40px;
+$all_title_size_mobile_en:30px;
+$all_title_size_web_ar:36px;
+$all_title_size_mobile_ar:26px;
+$all_dec_size_web_en:20px;
+$all_dec_size_mobile_en:16px;
+$all_dec_size_web_ar:18px;
+$all_dec_size_mobile_ar:16px;
+
+$box_title_size_web_en:20px;
+$box_title_size_mobile_en:20px;
+$box_title_size_web_ar:20px;
+$box_title_size_mobile_ar:20px;
+$box_dec_size_web_en:16px;
+$box_dec_size_mobile_en:16px;
+$box_dec_size_web_ar:16px;
+$box_dec_size_mobile_ar:16px;
+#main-page {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('../../../assets/images/cashi-background.png');
+    @media only screen and (max-width: 768px) {
+      height: auto;
+      overflow-y: auto;
+    }
+    .content {
+      height: 51vh;
+      @media only screen and (max-width: 768px) {
+        height: auto;
+      }
+      .container_cc {
+        display: flex;
+        align-items: center;
+        margin: 0rem auto;
+        width: 80%;
+        @media only screen and (max-width: 768px) {
+          display: block;
+          width: 100%;
+          padding: 0 2rem;
+        }
+        .cashi-discription {
+          background-repeat: no-repeat;
+          position: relative;
+          height: 100%;
+          background-position: top left;
+          background-image: url('../../../assets/images/circle.png');
+          padding: 4rem 0rem 6rem 2rem; 
+          @media only screen and (max-width: 768px) {
+            padding: 2rem 0rem 5rem 0rem;
+          }
+          h2 {
+            font-weight: 600;
+            font-size: $head_title_size_web_en;
+            line-height: 56px;
+            color: #ffffff;
+            @media only screen and (max-width: 768px) {
+              font-size: $head_title_size_mobile_en;
+            }
+          }
+        }
+        .big-mobile{
+          // width: 53%;
+          .weather {
+            width: 370px;
+            height: 345px;
+            background-image: 
+            url("../../../assets/images/ar/protection.png"),
+            url("../../../assets/images/ar/iPhone.png"),
+            url("../../../assets/images/ar/electricity.png"); 
+            background-repeat: no-repeat;
+            background-position: 26px 99px, 66px 1px, 33px 41px;
+            -webkit-animation: weather 1.5s;
+          }
+          @-webkit-keyframes weather { 
+            0% {
+              background-position: 26px -1500px, 66px -1000px, 33px -200px;
+            }
+            100% {
+              background-position: 26px 99px, 66px 1px, 33px 41px;
+            }
+          }
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+          img{
+            width: 100%;
+          }
+        }
+      }
+    }
+    .type-cashi {
+      // height: 28vh;
+      @media only screen and (max-width: 768px) {
+        height: auto;
+      }
+      .cards {
+        display: flex;
+        justify-content: center;
+        @media only screen and (max-width: 768px) {
+          display: block;
+        }
+        .card {
+          position: relative;
+          display: block;
+          background: #ffffff;
+          border: 1px solid #cde4f9;
+          box-sizing: border-box;
+          width: 23%;
+          border-radius: 24px;
+          padding: 1rem 0rem 0.25rem 1.5rem;
+          align-items: center;
+          margin: 0 1.5rem;
+          @media only screen and (max-width: 768px) {
+              width: 95%;
+              margin: 0.5rem auto;
+          }
+          .intro {
+            width: 73%;
+            @media only screen and (max-width: 768px) {
+              width: 100%;
+            }
+            h3 {
+              font-weight: 600;
+              font-size: 20px;
+              line-height: 1.2;
+              color: #0f1c49;
+              margin-bottom: 0.5rem;
+              cursor: pointer;
+              span {
+                font-size: 29px;
+                font-weight: 700;
+                cursor: pointer;
+              }
+            }
+            .discription {
+              font-weight: 400;
+              font-size: 1vw;
+              line-height: 20px;
+              margin-bottom: 0.75rem;
+              color: #130f49;
+              opacity: 0.6;
+              @media only screen and (max-width: 768px) {
+                font-size: $box_dec_size_mobile_en;
+                width: calc(100% - 90px);
+              }
+            }
+            .go-page {
+              position: relative;
+              letter-spacing: -0.01em;
+              color: #7e57c2;
+              border-bottom: 2px solid #4f2d82;
+              font-size: 13px;
+              cursor: pointer;
+            }
+            .img {
+              transform: rotateY(180deg);
+              position: absolute;
+              bottom: 0;
+            }
+            .name-card {
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 37px;
+              letter-spacing: 0.0052em;
+              color: #130f49;
+              opacity: 0.6;
+              margin: 0;
+            }
+          }
+          .images {
+            img {
+              position: absolute;
+              right: -2rem;
+              bottom: 0;
+              width: 160px;
+              @media only screen and (max-width: 768px) {
+                width: 136px;
+                right: -0.75rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+  
+  #main-page:lang(ar){  
+     .content .container_cc .cashi-discription{
+      background-position: top right;
+      } 
+      .type-cashi .cards .card{
+      padding: 1rem 1.5rem 0.25rem 0;
+      .intro .img{
+        transform: rotateY(0);
+      }
+      .images img{
+        left:-1rem ;
+        right: auto;
+      }
+    }
+  }

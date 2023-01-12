@@ -1,0 +1,189 @@
+// colors
+$blue: #233963;
+$white: #FFF;
+$black: #000;
+$dark: #4A4A4A;
+$light: #A4A4A4;
+$orange: #ef9536;
+
+//font size
+$head_title_size_web_en:50px;
+$head_title_size_mobile_en:32px;
+$head_title_size_web_ar:45px;
+$head_title_size_mobile_ar:32px;
+$head_dec_size_web_en:20px;
+$head_dec_size_mobile_en:16px;
+$head_dec_size_web_ar:18px;
+$head_dec_size_mobile_ar:16px;
+
+$all_title_size_web_en:40px;
+$all_title_size_mobile_en:30px;
+$all_title_size_web_ar:36px;
+$all_title_size_mobile_ar:26px;
+$all_dec_size_web_en:20px;
+$all_dec_size_mobile_en:16px;
+$all_dec_size_web_ar:18px;
+$all_dec_size_mobile_ar:16px;
+
+$box_title_size_web_en:20px;
+$box_title_size_mobile_en:20px;
+$box_title_size_web_ar:20px;
+$box_title_size_mobile_ar:20px;
+$box_dec_size_web_en:16px;
+$box_dec_size_mobile_en:16px;
+$box_dec_size_web_ar:16px;
+$box_dec_size_mobile_ar:16px;
+#about {
+
+    .top-content {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+        margin-bottom: 3rem;
+        background-image: url('../../../assets/images/merchant-background.png');
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+            min-height: auto;
+            background-position: center center;
+        }
+
+        .head-content {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 3rem 0;
+
+            @media only screen and (max-width: 768px) {
+                padding: 1rem;
+                display: block;
+            }
+
+             .description {
+                width: 37%;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-family: 'Noto Kufi Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: $head_title_size_web_en;
+                    line-height: 56px;
+                    color: #fff;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: $head_title_size_mobile_en;
+                        line-height: 35px;
+                    }
+                }
+
+                a{
+                    color: #fff !important;
+                }
+                p {
+                    font-family: 'Noto Kufi Arabic', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: $head_dec_size_web_en;
+                    line-height: 30px;
+                    color: #ffffff;
+                    
+                    @media only screen and (max-width: 768px) {
+                        font-size: $head_dec_size_mobile_en;
+                        line-height: 24px;
+                    }
+                    span {
+                        font-size: 20px;
+                        margin-top: 1rem;
+                        display: block;
+                        color: #feca00;
+
+                        @media only screen and (max-width: 768px) {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+            .image {
+                width: 23%;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                    display: none;
+                }
+
+                img {
+                    width: 100%
+                }
+            }
+        }
+    }
+
+    .content {
+        .about_card {
+            h5 {
+                font-family: 'Noto Kufi Arabic', sans-serif;
+                font-style: normal;
+                font-weight: 500;
+                font-size: $box_title_size_web_en;
+                line-height: 34px;
+                text-align: center;
+                color: #0F1C49;
+                margin-bottom: 0.5rem;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: $box_title_size_mobile_en;
+                }
+            }
+
+            p {
+                font-family: 'Noto Kufi Arabic', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: $box_dec_size_web_en;
+                line-height: 24px;
+                color: #130F49;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: $box_dec_size_mobile_en;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+}
+#about:lang(ar) {
+    .top-content .head-content .description h1 {
+        font-size: $head_title_size_web_ar;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 768px) {
+            font-size: $head_title_size_mobile_ar;
+            line-height: 30px;
+        }
+    }
+    .top-content .head-content .description p {
+        font-size: $head_dec_size_web_ar;
+        line-height: 30px;
+        @media only screen and (max-width: 768px) {
+            font-size: $head_dec_size_mobile_ar;
+            line-height: 26px;
+        }
+    }
+    
+    .content .about_card h5{
+        font-size: $box_title_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $box_title_size_mobile_ar;
+        }
+    }
+    .content .about_card p{
+        font-size: $box_dec_size_web_ar;
+        @media only screen and (max-width: 768px) {
+            font-size: $box_dec_size_mobile_ar;
+        }
+    }
+}

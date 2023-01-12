@@ -1,0 +1,46 @@
+#contact-us {
+    .top-content{
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    min-height: 20vh;
+        h3{
+        font-size: 2rem ;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        padding: 2rem 0;
+    }
+    }
+    
+    .info-contact{
+        padding: 2rem;
+            @media only screen and (max-width: 768px) {
+                padding: 4rem 0;
+            }
+        .image{
+            @media only screen and (max-width: 768px) {
+                display: none;
+            }
+            }
+        p{
+            color: #4a4a4a;
+            font-size: 1.5rem;
+            font-weight: 700;
+            width: 40%;
+            margin: auto;
+            line-height: 40px;
+            @media only screen and (max-width: 768px) {
+                width: 95%;
+            }
+            .email{
+                color: #F8B132;
+                font-weight: bold;
+            }
+            .phone{
+                color: #F8B132;
+                font-weight: bold;
+            }
+        }
+    }
+}

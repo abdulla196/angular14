@@ -1,0 +1,87 @@
+<div id="main-page" dir="{{'direction' | translate}}" lang="{{'language'|translate}}">
+    <app-header></app-header>
+    
+    <section class="content">
+        <div class="container_cc">
+            <div class="cashi-discription">
+            <h2> {{ "home1" | translate }}</h2>
+            </div>
+            <div class="big-mobile">
+            <div class="weather animation"></div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="type-cashi" id="type-cashi">
+        <div class="container_c">
+          <div class="cards">
+            <div class="card">
+              <div class="intro">
+                <NuxtLink routerLink="/merchant">
+                <h3>{{ "card1-1" | translate }}<br />
+                  <span>{{"card1-2" | translate}}</span>
+                </h3></NuxtLink>
+                <p class="discription">
+                  {{"card1-3" | translate}} <br/> {{"card1-4" | translate}}
+                </p>
+                <NuxtLink routerLink="/merchant" class="go-page"> {{"card-details" | translate}}
+                  <img loading="lazy" alt="cashi" class="img" src="../../../assets/images/cashi-arrow.png" width="14" /></NuxtLink>
+                <p class="name-card">{{"card1-5" | translate}}</p>
+              </div>
+              <div class="images">
+                <img loading="lazy" alt="cashi" src="../../../assets/images/en/market-image.png"  *ngIf="!isValid ; else Card1"/>
+                
+                <ng-template #Card1>
+                  <img loading="lazy" alt="cashi" src="../../../assets/images/ar/market-image.png"/>
+                </ng-template>
+              </div>
+            </div> 
+            
+            <div class="card">
+              <div class="intro"><a routerLink="/biller">
+                <h3>{{"card2-1" | translate}} <br /><span>{{"card2-1" | translate}}</span></h3></a>
+                <p class="discription">
+                  {{"card2-3"| translate}}<br />
+                  {{"card2-4"| translate}}
+                </p>
+                <a routerLink="/biller" class="go-page"> {{ "card-details"| translate}}
+                  <img loading="lazy" alt="cashi" class="img" src="../../../assets/images/cashi-arrow.png" width="14" /></a>
+                <p class="name-card">{{"card2-5"| translate}}</p>
+              </div>
+              <div class="images">
+                <img loading="lazy" alt="cashi" src="../../../assets/images/en/partner-image.png"  *ngIf="!isValid ; else Card2"  />
+                
+                <ng-template #Card2>
+                  <img loading="lazy" alt="cashi" src="../../../assets/images/ar/partner-image.png"/>
+                </ng-template>
+              </div>
+            </div>
+            <div class="card">
+              <div class="intro">
+                <a routerLink="/consumer">
+                <h3>
+                  {{"card3-1"| translate}} <br />
+                  <span> {{"card3-2"| translate}} </span>
+                </h3>
+                </a>
+                <p class="discription">
+                   {{"card3-3"| translate}}  <br />
+                   {{"card3-4"| translate}} 
+                </p>
+                <a routerLink="/consumer" class="go-page"> {{ "card-details"| translate}}
+                  <img loading="lazy" alt="cashi" class="img" src="../../../assets/images/cashi-arrow.png" width="14" /></a>
+                <p class="name-card"> {{"card3-5"| translate}} </p>
+              </div>
+              <div class="images">
+                <img loading="lazy" alt="cashi" src="../../../assets/images/en/user-image.png"   *ngIf="!isValid ; else Card3"   />
+                
+                <ng-template #Card3>
+                  <img loading="lazy" alt="cashi" src="../../../assets/images/ar/user-image.png"  v-else />
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <app-footer-home></app-footer-home>
+</div>

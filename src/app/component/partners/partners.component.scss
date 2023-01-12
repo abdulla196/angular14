@@ -1,0 +1,87 @@
+// colors
+$blue: #233963;
+$white: #FFF;
+$black: #000;
+$dark: #4A4A4A;
+$light: #A4A4A4;
+$orange: #ef9536;
+
+//font size
+$head_title_size_web_en:50px;
+$head_title_size_mobile_en:32px;
+$head_title_size_web_ar:45px;
+$head_title_size_mobile_ar:32px;
+$head_dec_size_web_en:20px;
+$head_dec_size_mobile_en:16px;
+$head_dec_size_web_ar:18px;
+$head_dec_size_mobile_ar:16px;
+
+$all_title_size_web_en:40px;
+$all_title_size_mobile_en:30px;
+$all_title_size_web_ar:36px;
+$all_title_size_mobile_ar:26px;
+$all_dec_size_web_en:20px;
+$all_dec_size_mobile_en:16px;
+$all_dec_size_web_ar:18px;
+$all_dec_size_mobile_ar:16px;
+
+$box_title_size_web_en:20px;
+$box_title_size_mobile_en:20px;
+$box_title_size_web_ar:20px;
+$box_title_size_mobile_ar:20px;
+$box_dec_size_web_en:16px;
+$box_dec_size_mobile_en:16px;
+$box_dec_size_web_ar:16px;
+$box_dec_size_mobile_ar:16px;
+#Partners {
+    .top-content {
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+        margin-bottom: 3rem;
+        min-height: 32vh;
+        @media only screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+            min-height: auto;
+            background-position: center center;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Noto Kufi Arabic', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: $head_title_size_web_en;
+            line-height: 56px;
+            color: #fff;
+            padding: 2rem 0;
+            @media only screen and (max-width: 768px) {
+                font-size: $head_title_size_mobile_en;
+                line-height: 35px;
+            }
+        }
+        }
+    
+
+    .pos-empowerd {
+
+        .clients {
+            margin: 8rem 0;
+            @media only screen and (max-width: 768px) {
+                margin: 4rem 0;
+            } 
+ 
+        }
+
+    }
+}
+
+[lang="ar"] {
+    #Partners .top-content  h1 {
+        font-size: $head_title_size_web_ar;
+        margin-bottom: 1rem;
+        @media only screen and (max-width: 768px) {
+            font-size: $head_title_size_mobile_ar;
+            line-height: 30px;
+        }
+    } 
+}

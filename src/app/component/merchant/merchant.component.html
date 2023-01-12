@@ -1,0 +1,162 @@
+
+        <div id="merchant">
+            <div class="top-content">
+                <app-header></app-header>
+                <div class="head-content">
+                    <div class="description">
+                        <h1>
+                            {{'merchant_1'| translate}}
+                        </h1>
+                        <p>
+                            {{'merchant_2'| translate}}
+                            <br />
+                            <span>
+                            {{'merchant_3'| translate}}</span>
+                        </p>
+                    </div>
+                    <div class="image">
+                        <img loading="lazy" src="../../../assets/images/store.png" alt="store" />
+                    </div>
+                </div>
+            </div>
+
+            <section class="pos-empowerd">
+                <div class="pos-content">
+                    <div class="image">
+                        <img loading="lazy" src="../../../assets/images/pos.png" alt="store" />
+                    </div>
+                    <div class="description">
+                        <h2>
+                            {{'merchant_4'| translate}}
+                        </h2>
+                        <p [innerHTML]="'merchant_5'| translate">  
+                        </p>
+                        <p>
+                            <br/>
+                            {{'merchant_6'| translate}}</p>
+                    </div>
+                </div>
+                <div class="do-it">
+                    <h2>
+                            {{'merchant_7'| translate}}
+                    </h2>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="intro">
+                                <h3>
+                            {{'merchant_8'| translate}}
+                                </h3>
+                                <p class="discription">
+                            {{'merchant_9'| translate}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="intro">
+                                <h3>
+                            {{'merchant_10'| translate}}
+                                </h3>
+                                <p class="discription">
+                            {{'merchant_11'| translate}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="intro">
+                                <h3>
+                            {{'merchant_12'| translate}}
+                                </h3>
+                                <p class="discription">
+                            {{'merchant_13'| translate}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tracking-transaction">
+                    <div class="transaction-content">
+                        <div class="description">
+                            <h2>
+                            {{'merchant_14'| translate}}
+                            </h2>
+                            <p>
+                            {{'merchant_15'| translate}}
+                            </p>
+                        </div>
+                        <div class="image">
+                            <img loading="lazy" src="../../../assets/images/transactions.png" alt="store" />
+                        </div>
+                    </div>
+                    <div class="steps">
+                        <div class="one-step">
+                            <div class="head">
+                                <img loading="lazy" src="../../../assets/images/trusted.svg"  alt="cashi" />
+                                <h4 style=" ">
+                            {{'merchant_16'| translate}}
+                                </h4>
+                            </div>
+                            <div class="content">
+                                <p>
+                            {{'merchant_18'| translate}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="one-step">
+                            <div class="head">
+                                <img loading="lazy" src="../../../assets/images/reliable.svg"  alt="cashi" />
+                                <h4>
+                            {{'merchant_19'| translate}}
+                                </h4>
+                            </div>
+                            <div class="content">
+                                <p>
+                            {{'merchant_20'| translate}}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="one-step">
+                            <div class="head">
+                                <img loading="lazy" src="../../../assets/images/improving.svg"  alt="cashi" />
+                                <h4>
+                            {{'merchant_21'| translate}}
+                                </h4>
+                            </div>
+                            <div class="content">
+                                <p>
+                            {{'merchant_22'| translate}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="point-sale">
+                    <div class="point-sale-content">
+                        <div class="description">
+                            <h2>
+                                    {{'merchant_23'| translate}}
+                            </h2>
+                            <p>
+                            {{'merchant_24'| translate}}
+                            </p>
+                            <div class="image hidden">
+
+                        <a routerLink="/coming" class="menu-link"> 
+                                <img loading="lazy" alt="cashi" src="../../../assets/images/google-paly.png" width="188px">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img loading="lazy" src="../../../assets/images/point-sale.png" alt="store" style="width: 100%" />
+                        </div>
+                    </div>
+                </div>
+                <div class="map">
+                    <h3>
+                            {{'merchant_25'| translate}}
+                    </h3> 
+                        <a routerLink="/coming" class="menu-link"> 
+                            {{ 'merchant_26' | translate}} </a>
+                </div>
+                <app-footer></app-footer>
+            </section>
+        </div>
